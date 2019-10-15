@@ -1,0 +1,15 @@
+RSA-Cryptography Algorithm:
+
+RSA (Rivest–Shamir–Adleman) is an algorith used by modern computers to encrypt and decrypt message.
+It is an asymmetric cryptographic algotithm.This is also called public key cryptography, because one of the keys can be given to anyone.
+The other key must be kept private.The Required algotrith for Encrypting a message using RSA Cryptography is described below:
+
+1. choose two different prime number "p" and "q".
+2. Calculate "N" = p*q.
+3. calculate Q(N)=(p-1)(q-1).
+4. Choose an integer "e", such that 1 < e < Q(N), and co-prime with both N and Q(N).
+5. compute "d", where "de" congruent to [1 mod Q(N)].
+
+Now,For encrypting use encrypting key(N,E); p2 = p1^e mod N, where 'p1' is the ASCII value of the letter in the secret message.
+
+And For decrypting use decrypting key(N,d), p1 = p2^d mod N, where 'p2' is the ASCII value of the letter in the encrypted message.
